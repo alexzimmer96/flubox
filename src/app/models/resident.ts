@@ -1,0 +1,3 @@
+interface Resident {
+    name: string;
+}
