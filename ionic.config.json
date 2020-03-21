@@ -1,0 +1,7 @@
+{
+  "name": "flubox",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
