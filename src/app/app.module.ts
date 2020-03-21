@@ -12,10 +12,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OverviewComponent } from './pages/overview/overview.component';
 import { BoxesComponent } from './pages/boxes/boxes.component';
-import { CreateHouseholdComponent } from './pages/household/create-household/create-household.component';
+import { SelectResidentsComponent } from './pages/order/select-residents/select-residents.component';
+import { SelectBoxesComponent } from './pages/order/select-boxes/select-boxes.component';
 
 @NgModule({
-  declarations: [AppComponent, OverviewComponent, BoxesComponent, CreateHouseholdComponent],
+  declarations: [AppComponent, OverviewComponent, BoxesComponent, SelectResidentsComponent, SelectBoxesComponent],
   entryComponents: [],
   imports: [
     BrowserModule,

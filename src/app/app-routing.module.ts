@@ -1,4 +1,5 @@
-import { CreateHouseholdComponent } from './pages/household/create-household/create-household.component';
+import { SelectBoxesComponent } from './pages/order/select-boxes/select-boxes.component';
+import { SelectResidentsComponent } from './pages/order/select-residents/select-residents.component';
 
 import { BoxesComponent } from './pages/boxes/boxes.component';
 import { OverviewComponent } from './pages/overview/overview.component';
@@ -20,8 +21,12 @@ const routes: Routes = [
     component: BoxesComponent
   },
   {
-    path: 'create-household',
-    component: CreateHouseholdComponent
+    path: 'order/select-residents',
+    component: SelectResidentsComponent
+  },
+  {
+    path: 'order/select-boxes',
+    component: SelectBoxesComponent
   }
 ];
 

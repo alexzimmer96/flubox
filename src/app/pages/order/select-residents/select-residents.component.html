@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Neue Bestellung</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="padding">
+        <h4>Haushaltsgröße</h4>
+        <p>Damit wir genau wissen was für Boxen du benötigst musst Du uns erzählen wen du alles versorgen möchtest.</p>
+    </div>
+    <ion-list>
+        <ion-item-group>
+            <ion-item>
+                <ion-label>Erwachsene</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-range value=1 snaps="true" pin="true" min="0" max="6" color="secondary">
+                    <ion-label slot="start">0</ion-label>
+                    <ion-label slot="end">6</ion-label>
+                </ion-range>
+            </ion-item>
+        </ion-item-group>
+        <ion-item-group>
+            <ion-item>
+                <ion-label>Kinder bis 16 Jahren</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-range snaps="true" pin="true" min="0" max="10" color="secondary">
+                    <ion-label slot="start">0</ion-label>
+                    <ion-label slot="end">10</ion-label>
+                </ion-range>
+            </ion-item>
+        </ion-item-group>
+        <ion-item-group>
+            <ion-item>
+                <ion-label>Kleinkinder bis 3 Jahren</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-range snaps="true" pin="true" min="0" max="10" color="secondary">
+                    <ion-label slot="start">0</ion-label>
+                    <ion-label slot="end">10</ion-label>
+                </ion-range>
+            </ion-item>
+        </ion-item-group>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-button expand="full">Weiter</ion-button>
+</ion-footer>
