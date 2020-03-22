@@ -1,5 +1,6 @@
 ## Drive-In und Rosinenboxen
-Dieser App-Prototyp wurde für den #WirVsVirusHack entwickelt und stellt vor, wie unsere umgesetzt werden könnte.
+https://devpost.com/software/drive-in-lebensmittelhandel
+Dieser Prototyp wurde für den #WirVsVirusHack entwickelt und stellt vor, wie unsere App umgesetzt werden könnte.
 
 ### Installation
 1. Projekt klonen und in das Projektverzeichnis wechseln
