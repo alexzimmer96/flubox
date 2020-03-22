@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Neue Bestellung</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div id="container">
+        <div class="padding">
+            <h4>Haushaltsbedarf</h4>
+            <p>Wähle weitere Dinge aus die Du benötigst.</p>
+        </div>
+        <ion-item *ngFor="let extra of extras; let i = index">
+            <ion-label>{{ extra.name }}</ion-label>
+            <ion-toggle color="dark"></ion-toggle>
+        </ion-item>
+    </div>
+</ion-content>
+
+<ion-footer>
+    <ion-button expand="full" (click)="submitExtraSelection()">Weiter</ion-button>
+</ion-footer>

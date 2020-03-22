@@ -16,12 +16,7 @@ export class AppComponent implements OnInit {
       title: 'Übersicht',
       url: '/overview',
       icon: 'bar-chart'
-    },
-    {
-      title: 'Boxen',
-      url: '/boxes',
-      icon: 'cube'
-    },
+    }
   ];
 
   constructor(

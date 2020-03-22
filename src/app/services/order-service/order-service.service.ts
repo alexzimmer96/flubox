@@ -22,4 +22,9 @@ export class OrderServiceService {
     this.activeOrder.residentToddlers = toddlers;
   }
 
+  public passBoxes(adultBoxes: any, childrenBoxes: any) {
+    this.activeOrder.adultBoxes = adultBoxes;
+    this.activeOrder.childrenBoxes = childrenBoxes;
+  }
+
 }

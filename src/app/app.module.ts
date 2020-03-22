@@ -11,12 +11,12 @@ import { IonicStorageModule } from '@ionic/storage';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { OverviewComponent } from './pages/overview/overview.component';
-import { BoxesComponent } from './pages/boxes/boxes.component';
 import { SelectResidentsComponent } from './pages/order/select-residents/select-residents.component';
 import { SelectBoxesComponent } from './pages/order/select-boxes/select-boxes.component';
+import { SelectExtrasComponent } from './pages/order/select-extras/select-extras.component';
 
 @NgModule({
-  declarations: [AppComponent, OverviewComponent, BoxesComponent, SelectResidentsComponent, SelectBoxesComponent],
+  declarations: [AppComponent, OverviewComponent, SelectResidentsComponent, SelectBoxesComponent, SelectExtrasComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
