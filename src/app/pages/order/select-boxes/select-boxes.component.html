@@ -1,13 +1,38 @@
 <ion-header [translucent]="true">
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Bestellung</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content [fullscreen]="true">
-    <div id="container">
-    </div>
-  </ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Neue Bestellung</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-card *ngFor="let box of boxes; let i = index">
+      <ion-card-header>
+        <ion-card-title>{{ box.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          {{ box.description }}
+          <a>Zum Boxinhalt</a>
+        </p>
+        <ion-item class="no-border" lines="none">
+          <ion-icon (click)="decreaseAdultBoxAmount(i)" name="chevron-back-circle" slot="start"></ion-icon>
+          <ion-label>{{ adultBoxAmount[i] }}x Erwachsenenbox</ion-label>
+          <ion-icon (click)="increaseAdultBoxAmount(i)"name="chevron-forward-circle" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item class="no-border" lines="none">
+          <ion-icon (click)="decreaseChildrenBoxAmount(i)" name="chevron-back-circle" slot="start"></ion-icon>
+          <ion-label>{{ childrenBoxAmount[i] }}x Kinderbox</ion-label>
+          <ion-icon (click)="increaseChildrenBoxAmount(i)" name="chevron-forward-circle" slot="end"></ion-icon>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-button expand="full" (click)="submitResidentSelection()">Weiter</ion-button>
+</ion-footer>

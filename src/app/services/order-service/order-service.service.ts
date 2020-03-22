@@ -5,5 +5,21 @@ import { Injectable } from '@angular/core';
 })
 export class OrderServiceService {
 
+  private activeOrder: Order;
+
   constructor() { }
+
+  public getActiveOrder(): Order {
+    if (this.activeOrder === undefined) {
+      this.activeOrder = {};
+    }
+    return this.activeOrder;
+  }
+
+  public passResidents(adults: number, children: number, toddlers: number) {
+    this.activeOrder.residentAdults = adults;
+    this.activeOrder.residentChildren = children;
+    this.activeOrder.residentToddlers = toddlers;
+  }
+
 }
