@@ -3,8 +3,16 @@
     <ion-menu id="mainMenu" contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Demo User</ion-list-header>
-          <ion-note>demo@wirvsvirushack.org</ion-note>
+          <ion-list-header>
+            <ion-item>
+              <ion-label  class="ion-text-wrap">
+                <h2>Drive-In-Lebensmittelhandel</h2>
+                <small>Ein Projekt des WirvsVirus-Hackathons der Bundesregierung</small>
+                <ion-button  href="https://devpost.com/software/drive-in-lebensmittelhandel">Link zu DevPost</ion-button>
+              </ion-label>
+            </ion-item>
+          </ion-list-header>
+
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>

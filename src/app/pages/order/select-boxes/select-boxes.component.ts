@@ -12,9 +12,9 @@ export class SelectBoxesComponent implements OnInit {
   private childrenBoxAmount: number[] = [0, 0, 0]
 
   private boxes: any = [
-    { name: "Dolce Vita", description: "Pasta und Nudeln für Italienisch angehauchtes Essen." },
-    { name: "Hong Kong", description: "Mit leckerem Asiatischen Essen und frischem Gemüse." },
-    { name: "Vegi Box", description: "Ohne Fleisch und trotzdem Lecker." }
+    { name: "Dolce Vita", description: "Pasta und Nudeln für italienisch angehauchtes Essen" },
+    { name: "Hong Kong", description: "Mit leckerem asiatischen Essen und frischem Gemüse" },
+    { name: "Vegi Box", description: "Ohne Fleisch und trotzdem lecker" }
   ]
 
   constructor(private orderSvc: OrderServiceService, private router: Router) { }
